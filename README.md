@@ -50,3 +50,37 @@ File `docker-compose.yml` digunakan untuk mengatur dan menjalankan lingkungan ya
 
    ```bash
    docker-compose up
+   
+3. ** Menjalankan Kafka Producer
+Jalankan produser suhu dan kelembaban secara terpisah di terminal:
+
+```bash
+python producer_suhu.py
+python producer_kelembaban.py
+```
+
+4. ** Menjalankan Spark Consumer
+Jalankan aplikasi Spark Streaming untuk memproses data dari Kafka:
+
+```bash
+python spark_consumer.py
+```
+
+5. ** Dokumentasi
+- Producer
+
+![Screenshot 2025-05-22 233151](https://github.com/user-attachments/assets/8635345b-9f0b-4deb-832b-4c3b90a90cdc)
+![Screenshot 2025-05-22 232902](https://github.com/user-attachments/assets/9db60a76-84ef-41d5-9d87-977f8fb3e059)
+
+- Spark
+
+![Screenshot 2025-05-22 233430](https://github.com/user-attachments/assets/d74a656c-1135-4d7f-8fa8-399e88cdb618)
+
+- Peringatan jika melewati batas
+
+![Screenshot 2025-05-22 233655](https://github.com/user-attachments/assets/b9f7faa8-8626-4100-9c35-2b62a01d1d38)
+
+
+
+
+
